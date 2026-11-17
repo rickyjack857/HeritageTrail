@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HeritageTrail - Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="auth-container">
+<section class="auth-card">
+<h1 class="brand-title">HeritageTrail</h1>
+<p class="tagline">Create your visitor account</p>
+<h2>Registration Form</h2>
+<form id="registerForm">
+<div class="form-group">
+<label for="fullname">Full Name</label>
+<input type="text" id="fullname" minlength="3"
+maxlength="50" required placeholder="Enter full name">
+</div>
+<div class="form-group">
+<label for="regEmail">Email Address</label>
+<input type="email" id="regEmail" required
+placeholder="name@example.com">
+</div>
+<div class="form-group">
+<label for="mobile">Mobile Number</label>
+<input type="tel" id="mobile" pattern="[0-9]{10}"
+inputmode="numeric" title="Enter exactly 10 digits"
+required placeholder="10-digit mobile number">
+</div>
+<div class="form-group">
+<label for="location">Preferred Location</label>
+<select id="location" required>
+<option value="">-- Choose a location --</option>
+<option>Tamil Nadu</option>
+<option>Mysuru</option>
+<option>Kerala</option>
+<option>Karnataka</option>
+</select>
+</div>
+<div class="form-group">
+<label for="category">Heritage Category</label>
+<select id="category" required>
+<option value="">-- Choose a category --</option>
+<option>Forts</option>
+<option>Museums</option>
+<option>Temples</option>
+<option>Monuments</option>
+<option>Cultural Villages</option>
+<option>Historical Buildings</option>
+</select>
+</div>
+<div class="form-group">
+<label for="regPassword">Create Password</label>
+<input type="password" id="regPassword" minlength="8"
+required placeholder="At least 8 characters">
+</div>
+<div class="form-group">
+<label for="confirmPassword">Confirm Password</label>
+<input type="password" id="confirmPassword" minlength="8"
+required placeholder="Re-enter password">
+</div>
+<button class="btn btn-full" type="submit">Register</button>
+<p id="message" class="message" aria-live="polite"></p>
+</form>
+<p class="auth-footer">Already registered?
+<a href="login.html">Login here</a>
+</p>
+<p class="note">This client-side demonstration stores sample account data
+in this browser only. Do not use a real password.</p>
+</section>
+</main>
+<script src="auth.js"></script>
+</body>
+</html>

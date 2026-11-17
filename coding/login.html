@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HeritageTrail - Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="auth-container">
+<section class="auth-card">
+<h1 class="brand-title">HeritageTrail</h1>
+<p class="tagline">Discover local heritage. Travel responsibly.</p>
+<h2>User Login</h2>
+<form id="loginForm">
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" id="email" required
+placeholder="name@example.com">
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input type="password" id="password" minlength="8"
+required placeholder="Enter your password">
+</div>
+<button class="btn btn-full" type="submit">Login</button>
+<p id="message" class="message" aria-live="polite"></p>
+</form>
+<p class="auth-footer">New visitor?
+<a href="register.html">Create an account</a>
+</p>
+<p class="auth-footer"><a href="dashboard.html?guest=true">Continue as Guest</a></p>
+<p class="note">Student demonstration only. This page does not provide secure,
+server-based authentication.</p>
+</section>
+</main>
+<script src="auth.js"></script>
+</body>
+</html>

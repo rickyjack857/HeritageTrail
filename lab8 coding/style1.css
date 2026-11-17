@@ -1,0 +1,253 @@
+
+/* HeritageTrail Website CSS */
+
+/* Basic Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f5ef;
+  color: #203f35;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.site-header {
+  background: white;
+  padding: 20px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-mark {
+  background: #31594b;
+  color: white;
+  padding: 10px;
+}
+
+.primary-nav a {
+  margin: 10px;
+  color: #31594b;
+}
+
+.nav-cta {
+  background: #31594b;
+  color: white !important;
+  padding: 10px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Home Section */
+.hero {
+  background: #e9eee7;
+  padding: 50px;
+  margin: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.hero-text {
+  margin-bottom: 20px;
+}
+
+.button {
+  background: #31594b;
+  color: white;
+  padding: 12px;
+  display: inline-block;
+}
+
+.hero-art {
+  background: #d6e0d3;
+  height: 250px;
+  flex: 1;
+  border-radius: 50%;
+}
+
+/* Statistics */
+.stats-strip {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.stats-strip strong {
+  font-size: 25px;
+  color: #31594b;
+}
+
+/* Discover Section */
+.section-wrap {
+  padding: 40px;
+}
+
+.section-heading {
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  font-size: 30px;
+}
+
+.explore-tools {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.explore-tools input,
+.explore-tools select {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.site-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.site-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.site-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.site-card h3 {
+  margin: 10px 0;
+}
+
+.site-card p {
+  font-size: 14px;
+}
+
+.card-link {
+  display: inline-block;
+  color: #31594b;
+  margin-top: 10px;
+}
+
+/* Responsible Tourism */
+.responsible-section {
+  background: #203f35;
+  color: white;
+  padding: 40px;
+}
+
+.responsible-inner {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.guideline-list {
+  line-height: 2;
+}
+
+/* Visit Planning Form */
+.planner-section {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+
+.planner-form {
+  background: white;
+  padding: 25px;
+  width: 100%;
+}
+
+.planner-form input,
+.planner-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.planner-form button {
+  border: none;
+  cursor: pointer;
+}
+
+.form-message {
+  color: green;
+}
+
+/* Footer */
+.site-footer {
+  background: #203f35;
+  color: white;
+  padding: 25px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .hero,
+  .planner-section,
+  .responsible-inner {
+    flex-direction: column;
+  }
+
+  .site-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .primary-nav {
+    display: none;
+  }
+
+  .primary-nav.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .explore-tools {
+    flex-direction: column;
+  }
+
+  .stats-strip {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heritage Trail Visit Dashboard</title>
+<link href="https://jsdelivr.net" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">Heritage Trail</a>
+<span class="badge bg-warning text-dark">Responsible Travel</span>
+</div>
+</nav>
+<main class="container my-4">
+<div class="row g-4">
+<aside class="col-lg-4">
+<div class="card shadow-sm mb-4">
+<div class="card-header bg-dark text-white fw-bold">Visit Plan Summary</div>
+<div class="card-body">
+<h5>Your Heritage Journey</h5>
+<p class="text-muted">Sample visitor dashboard</p>
+<div class="progress mb-3">
+<div class="progress-bar bg-success" style="width:60%">60% Planned</div>
+</div>
+<ul class="list-group list-group-flush">
+<li class="list-group-item d-flex justify-content-between"><span>Selected place</span><strong>Mysore Palace</strong></li>
+<li class="list-group-item d-flex justify-content-between"><span>Visitors</span><strong>2</strong></li>
+<li class="list-group-item d-flex justify-content-between"><span>Status</span><span class="badge bg-info text-dark">Draft</span></li>
+</ul>
+</div>
+</div>
+<div class="card shadow-sm">
+<div class="card-header bg-success text-white">Quick Heritage Guide</div>
+<div class="list-group list-group-flush">
+<a href="#discover" class="list-group-item list-group-item-action">Discover places</a>
+<a href="#guidelines" class="list-group-item list-group-item-action">Tourism guidelines</a>
+<a href="#activity" class="list-group-item list-group-item-action">Recent activity</a>
+</div>
+</div>
+</aside>
+<section class="col-lg-8">
+<div class="card shadow-sm mb-4 border-success">
+<div class="card-header bg-success text-white d-flex justify-content-between">
+<strong>FEATURED HERITAGE PLACE</strong>
+<span class="badge bg-warning text-dark">Explore</span>
+</div>
+<div class="card-body">
+<div class="row align-items-center">
+<div class="col-md-4 text-center mb-3">
+<div class="bg-light border rounded p-4">
+<span class="display-1">🏛️</span>
+<p class="small mb-0">Heritage Site</p>
+</div>
+</div>
+<div class="col-md-8">
+<h3>Mysore Palace</h3>
+<p class="text-muted">Mysuru, Karnataka</p>
+<p>Explore the historic royal residence, its architecture and cultural importance.</p>
+<span class="badge bg-primary">Palace</span>
+<span class="badge bg-secondary">Popular destination</span>
+<button class="btn btn-success w-100 mt-3" data-bs-toggle="modal" data-bs-target="#visitModal">Plan a Visit</button>
+</div>
+</div>
+</div>
+</div>
+<div class="card shadow-sm" id="activity">
+<div class="card-header bg-dark text-white">Recent Visit Planning Activity</div>
+<div class="card-body p-0">
+<div class="table-responsive">
+<table class="table table-striped table-hover mb-0">
+<thead class="table-success">
+<tr>
+<th>Date</th>
+<th>Place</th>
+<th>Activity</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12 Nov 2026</td>
+<td>Mysore Palace</td>
+<td>View details</td>
+<td><span class="badge bg-success">Viewed</span></td>
+</tr>
+<tr>
+<td>13 Nov 2026</td>
+<td>Hampi</td>
+<td>Explore history</td>
+<td><span class="badge bg-info text-dark">Saved</span></td>
+</tr>
+<tr>
+<td>14 Nov 2026</td>
+<td>Sanchi Stupa</td>
+<td>Visit planning</td>
+<td><span class="badge bg-warning text-dark">Draft</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+</div>
+<section class="card shadow-sm mt-4" id="discover">
+<div class="card-body">
+<h4>Discover More Places</h4>
+<div class="row g-3">
+<div class="col-md-4">
+<div class="border rounded p-3 h-100">
+<strong>Hampi</strong>
+<p class="small mb-0">Historic ruins in Karnataka</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="border rounded p-3 h-100">
+<strong>Brihadeeswarar Temple</strong>
+<p class="small mb-0">Chola architecture in Tamil Nadu</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="border rounded p-3 h-100">
+<strong>Sanchi Stupa</strong>
+<p class="small mb-0">Buddhist heritage in Madhya Pradesh</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="alert alert-success mt-4" id="guidelines">
+<h5>Travel Responsibly</h5>
+<ul class="mb-0">
+<li>Keep the heritage site clean.</li>
+<li>Respect local culture and follow site rules.</li>
+<li>Do not damage monuments or remove objects.</li>
+</ul>
+</section>
+</main>
+<div class="modal fade" id="visitModal" tabindex="-1" aria-labelledby="visitModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header bg-success text-white">
+<h5 class="modal-title" id="visitModalLabel">Plan Your Heritage Visit</h5>
+<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+<p>Sample visit plan for <strong>Mysore Palace</strong>.</p>
+<label class="form-label" for="visitDate">Preferred visit date</label>
+<input type="date" class="form-control" id="visitDate">
+<label class="form-label mt-3" for="visitorCount">Number of visitors</label>
+<input type="number" class="form-control" id="visitorCount" min="1" max="10" value="2">
+<div class="alert alert-warning mt-3">Classroom demo only. This does not create a real booking.</div>
+<p id="planMessage" class="text-success"></p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<button class="btn btn-success" id="savePlan">Save Sample Plan</button>
+</div>
+</div>
+</div>
+</div>
+<footer class="bg-dark text-white text-center py-3">
+<p class="mb-0">© 2026 Team HeritageTrail | Local Heritage Discovery and Responsible Tourism Portal</p>
+</footer>
+<script src="https://jsdelivr.net"></script>
+<script>
+document.getElementById("savePlan").addEventListener("click",function(){
+const date=document.getElementById("visitDate").value;
+const count=document.getElementById("visitorCount").value;
+const message=document.getElementById("planMessage");
+if(!date||count<1||count>10)message.textContent="Please enter a valid date and visitor count.";
+else message.textContent="Sample plan prepared for "+count+" visitor(s) on "+date+".";
+});
+</script>
+</body>
+</html>
